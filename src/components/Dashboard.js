@@ -3,11 +3,8 @@ import {Container, Row, Button,Table,Modal,Form} from 'react-bootstrap'
 import { BsPencil, BsFillPenFill } from 'react-icons/bs';
 import { useState } from "react";
 
-
-
 function Dashboard() {
-    const [show, setShow] = useState(false);
-
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -32,7 +29,7 @@ function Dashboard() {
                             placeholder="Doe"
                             autoFocus
                         />
-                        <Form.Label>Username</Form.Label>
+                        <Form.Label>JDoe21</Form.Label>
                         <Form.Control
                             type="text"
                             placeholder="JDoe21"
