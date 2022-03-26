@@ -1,13 +1,9 @@
-
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <>
-      <header className="App-header">
-        <p>
-          Bonjour
-        </p>
-      </header>
+      <Dashboard />
     </>
   );
 }

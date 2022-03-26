@@ -1,0 +1,8 @@
+*{
+    background-color: #202020;
+    color: white;  
+    padding-top: 1em;
+}
+tr,td,th{
+    text-align: center;
+}
