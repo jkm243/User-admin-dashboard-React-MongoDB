@@ -1,9 +1,10 @@
 import Dashboard from './components/Dashboard';
+import NavbarUp from './components/NavbarUp';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <NavbarUp />
       <Dashboard />
     </>
   );

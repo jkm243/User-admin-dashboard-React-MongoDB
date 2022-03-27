@@ -10,31 +10,31 @@ function Dashboard() {
 
     return (
         <Container>
-            <h1>Dashboard</h1>
-            <Modal show={show} onHide={handleClose}>
+            {/* <h1>Dashboard</h1> */}
+            <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Edit</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>First Name</Form.Label>
+                            <Form.Label className="mt-3">First Name</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="John"
                                 autoFocus
                             />
-                            <Form.Label>Last Name</Form.Label>
+                            <Form.Label className="mt-3">Last Name</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="Doe"
-                                autoFocus
+                                
                             />
-                            <Form.Label>JDoe21</Form.Label>
+                            <Form.Label className="mt-3">Username</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="JDoe21"
-                                autoFocus
+                                
                             />
                         </Form.Group>
                     </Form>
@@ -49,7 +49,7 @@ function Dashboard() {
                 </Modal.Footer>
             </Modal>
             <Row>
-                <Table striped bordered hover variant="dark" responsive >
+                <Table striped bordered hover variant="dark" responsive className="table">
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -65,8 +65,8 @@ function Dashboard() {
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><Button variant="outline-primary" onClick={handleShow}><BsPencil /></Button>
-                                <Button variant="danger"><BsFillPenFill /></Button> </td>
+                            <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillPenFill /></Button>
+                            </td>
                         </tr>
                     </tbody>
                 </Table>
