@@ -2,7 +2,7 @@ import "../styles/navbar.css"
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import logo from "../assets/logo192.png"
 import { Button, Modal, Form } from 'react-bootstrap'
-import { BsPencil} from 'react-icons/bs'
+import { BsFillPlusCircleFill } from 'react-icons/bs'
 import { useState } from "react";
 
 
@@ -30,13 +30,11 @@ function NavbarUp() {
               <Form.Control
                 type="text"
                 placeholder="Doe"
-
               />
               <Form.Label className="mt-3">Username</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="JDoe21"
-
               />
             </Form.Group>
           </Form>
@@ -72,7 +70,7 @@ function NavbarUp() {
               <Nav.Link eventKey={2} href="#memes">
                 History
               </Nav.Link>
-              <Button classname='m-2 p-1' variant="primary" onClick={handleShow}>Add</Button>
+              <Button classname='m-2 p-1' variant="primary" onClick={handleShow}><BsFillPlusCircleFill /></Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

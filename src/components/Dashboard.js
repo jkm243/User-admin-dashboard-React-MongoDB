@@ -1,6 +1,6 @@
 import "../styles/dashboard.css"
 import { Container, Row, Button, Table, Modal, Form } from 'react-bootstrap'
-import { BsPencil, BsFillPenFill } from 'react-icons/bs';
+import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 import { useState } from "react";
 
 function Dashboard() {
@@ -28,13 +28,13 @@ function Dashboard() {
                             <Form.Control
                                 type="text"
                                 placeholder="Doe"
-                                
+
                             />
                             <Form.Label className="mt-3">Username</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="JDoe21"
-                                
+
                             />
                         </Form.Group>
                     </Form>
@@ -65,7 +65,7 @@ function Dashboard() {
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillPenFill /></Button>
+                            <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
                             </td>
                         </tr>
                     </tbody>
