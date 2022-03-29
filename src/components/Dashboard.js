@@ -10,7 +10,6 @@ function Dashboard() {
 
     return (
         <Container>
-            {/* <h1>Dashboard</h1> */}
             <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Edit</Modal.Title>
@@ -22,19 +21,18 @@ function Dashboard() {
                             <Form.Control
                                 type="text"
                                 placeholder="John"
+                                name="firstname"
                                 autoFocus
                             />
                             <Form.Label className="mt-3">Last Name</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="Doe"
-
                             />
                             <Form.Label className="mt-3">Username</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="JDoe21"
-
                             />
                         </Form.Group>
                     </Form>
@@ -60,6 +58,14 @@ function Dashboard() {
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+                            </td>
+                        </tr>
                         <tr>
                             <td>1</td>
                             <td>Mark</td>

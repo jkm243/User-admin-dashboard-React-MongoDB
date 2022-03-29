@@ -1,11 +1,12 @@
-import Dashboard from './components/Dashboard';
+import Cards from './components/Cards';
 import NavbarUp from './components/NavbarUp';
+import UserList from './components/UserList';
 
 function App() {
   return (
     <>
       <NavbarUp />
-      <Dashboard />
+      <Cards />
     </>
   );
 }
