@@ -70,7 +70,7 @@ function NavbarUp() {
               <Nav.Link eventKey={2} href="#memes">
                 History
               </Nav.Link>
-              <Button classname='m-2 p-1' variant="primary" onClick={handleShow}><BsFillPlusCircleFill /></Button>
+              <Button className='m-2 p-1' variant="primary" onClick={handleShow}><BsFillPlusCircleFill /></Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

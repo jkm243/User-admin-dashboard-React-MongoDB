@@ -63,7 +63,7 @@ function Dashboard() {
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+                            <td colSpan={2}><Button className='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
                             </td>
                         </tr>
                         <tr>
@@ -71,7 +71,7 @@ function Dashboard() {
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+                            <td colSpan={2}><Button className='m-2' variant="outline-primary" onClick={handleShow}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
                             </td>
                         </tr>
                     </tbody>

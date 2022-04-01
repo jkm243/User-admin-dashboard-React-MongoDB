@@ -6,7 +6,6 @@ import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 
 const Cards = () => {
     const [users, setUsers] = useState([])
-
     const fetchData = async () => {
         const response = await fetch("https://jsonplaceholder.typicode.com/users")
         const data = await response.json()
@@ -33,7 +32,8 @@ const Cards = () => {
                         <Card.Text>
                             Phone:{user.phone}
                         </Card.Text>
-                        <Button classname='m-2' variant="outline-primary" onClick={''}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+                        {/* onClick={''} */}
+                        <Button className='m-2' variant="outline-primary" ><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -68,7 +68,7 @@ const Cards = () => {
                                     <Card.Text>
                                         Phone: {item.phone}
                                     </Card.Text>
-                                    <Button classname='m-2' variant="outline-primary" onClick={''}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+                                    <Button className='m-2' variant="outline-primary" onClick={''}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -98,7 +98,8 @@ const Cards = () => {
                                     <Card.Text>
                                         Phone: {item.phone}
                                     </Card.Text>
-                                    <Button classname='m-2' variant="outline-primary" onClick={''}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+                                    {/* onClick={''} */}
+                                    <Button className='m-2' variant="outline-primary" ><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -112,7 +113,7 @@ const Cards = () => {
         <Container className='head'>
             <Row>
                 <ReactSearchAutocomplete
-                    classname='search'
+                    className='search'
                     items={users}
                     onSearch={handleOnSearch}
                     onSelect={handleOnSelect}
@@ -120,9 +121,9 @@ const Cards = () => {
                     formatResult={formatResult}
                 />
             </Row>
-            {/* <CardGroup>
+             <CardGroup>
                 {yourData}
-            </CardGroup> */}
+            </CardGroup> 
         </Container >
     );
 }

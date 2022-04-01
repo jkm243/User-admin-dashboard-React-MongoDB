@@ -24,7 +24,8 @@ const UserList = () => {
            <td>{user.username}</td>
            <td>{user.email}</td>
            <td>{user.phone}</td>
-           <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={''}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+           {/* onClick={''} */}
+           <td colSpan={2}><Button className='m-2' variant="outline-primary" ><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
             </td>
        </tr>
     ))

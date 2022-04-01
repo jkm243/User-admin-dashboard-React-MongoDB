@@ -40,7 +40,7 @@ export default class PersonList extends React.Component {
                 { this.state.persons.map(person => <td>{person.username}</td>)}
                 { this.state.persons.map(person => <td>{person.email}</td>)}
                 { this.state.persons.map(person => <td>{person.phone}</td>)}
-                <td colSpan={2}><Button classname='m-2' variant="outline-primary" onClick={''}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
+                <td colSpan={2}><Button className='m-2' variant="outline-primary" onClick={''}><BsPencil /></Button> <Button variant="danger"><BsFillTrashFill /></Button>
                 </td>
               </tr>
             </tbody>
