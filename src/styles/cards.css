@@ -1,8 +1,12 @@
 .head{ 
-    margin-top: 15%;
+    margin-top: 6%;
 }
 .card{
     margin: 5%;
     background-color: #202020;
-    color: aliceblue;
+    color: white;
+    z-index: 1000;
+}
+.search{
+    z-index: 0;
 }
